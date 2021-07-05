@@ -1,3 +1,4 @@
+<?php include_once "base.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +10,10 @@
 </head>
 <body>
     <h1>線上履歷表</h1>
+
+    <div id="headPic">
+        <img src="img/<?=$Title->find(['sh'=>1])['img'];?>" style="width:120px;height:150px">
+    
+    </div>
 </body>
 </html>

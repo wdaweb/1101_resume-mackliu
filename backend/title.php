@@ -18,7 +18,7 @@
                 ?>
                 <tr>
                     <td width="45%">
-                        <img src="img/<?=$value['img'];?>" style="width:300px;height:30px;">
+                        <img src="img/<?=$value['img'];?>" style="width:120px;height:150px;">
                     </td>
                     <td width="23%">
                         <input type="text" name='text[]' value="<?=$value['text'];?>">
