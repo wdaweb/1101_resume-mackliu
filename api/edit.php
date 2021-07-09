@@ -28,6 +28,12 @@ foreach($ids as $key => $id){
                 $row['text']=$_POST['text'][$key];
                 $row['href']=$_POST['href'][$key];
             break;
+            case "image":
+                $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
+                $row['text']=$_POST['text'][$key];
+                $row['subject']=$_POST['subject'][$key];
+                $row['href']=$_POST['href'][$key];
+            break;
             default:
                 $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
                 $row['text']=$_POST['text'][$key];

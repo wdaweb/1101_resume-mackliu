@@ -27,10 +27,13 @@ foreach ($rows as $key => $value) {
         <img src="img/<?=$value['img'];?>" style="width:100px;height:68px;">
     </td>
     <td>
-        <input type="text" name="subject" value="<?=$value['subject'];?>">
+        <input type="text" name="href[]" value="<?=$value['href'];?>">
     </td>
     <td>
-        <textarea name="text"  style="width:90%;height:60px"><?=$value['text'];?></textarea>
+        <input type="text" name="subject[]" value="<?=$value['subject'];?>">
+    </td>
+    <td>
+        <textarea name="text[]"  style="width:90%;height:60px"><?=$value['text'];?></textarea>
     </td>
     <td>
         <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>

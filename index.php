@@ -56,12 +56,14 @@ $ports=$Image->all(['sh'=>1]);
 foreach($ports as $port){
 ?>
 <div class="col-md-4 p-3" style="height:400px;">
-    <div class="port-img border rounded-circle w-100" style="background:url('img/<?=$port['img'];?>');background-size:cover;height:300px">
+<a href="<?=$port['href'];?>">
+    <div class="shadow port-img border rounded-circle w-100" style="background:url('img/<?=$port['img'];?>');background-size:cover;height:300px">
         
     </div>
+</a>
     <div>
-        <div class="port-subject">PHP萬年曆</div>
-        <div class="port-descript">使用PHP語言製作的線上萬年曆</div>
+        <h3 class="port-subject" style="text-shadow:1px 1px 3px #ccc"><?=$port['subject'];?></h3>
+        <div class="port-descript"><?=$port['text'];?></div>
     </div>
 </div>
 
