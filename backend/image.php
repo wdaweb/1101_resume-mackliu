@@ -1,15 +1,16 @@
-<div style="width:99%; height:87%; margin:auto; overflow:auto; border:#666 1px solid;">
+<div style="width:99%; margin:auto;">
     <p class="t cent botli"><?=$ts[$do];?></p>
     
     <form method="post" action="api/edit.php">
-        <table width="100%" class="cent">
+        <table width="100%" class="table table-bordered table-striped text-center">
             <tbody>
                 <tr class="yel">
-                    <td width="30%">作品縮圖</td>
-                    <td width="20%">作品主題</td>
-                    <td width="20%">作品描述</td>
-                    <td width="10%">顯示</td>
-                    <td width="10%">刪除</td>
+                    <td width="10%">作品縮圖</td>
+                    <td width="20%">作品連結</td>
+                    <td width="10%">作品主題</td>
+                    <td width="40%">作品描述</td>
+                    <td width="5%">顯示</td>
+                    <td width="5%">刪除</td>
                     <td></td>
                 </tr>
                 <?php

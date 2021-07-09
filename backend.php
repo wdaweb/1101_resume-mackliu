@@ -9,7 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>卓越科技大學校園資訊系統</title>
-    <link href="./css/css.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/js.js"></script>
 	<style>
@@ -35,43 +36,51 @@
     </div>
 
     <div id="main">
-    <a title="<?=$Title->find(['sh'=>1])['text'];?>" href="index.php" alt="">
-        <div class="ti" style="background:url(&#39;img/<?=$Title->find(['sh'=>1])['img'];?>&#39;); background-size:cover;">
-        </div>
-    <!--標題-->
-    </a>
+    
         <div id="ms">
             <div id="lf" style="float:left;">
                 <div id="menuput" class="dbor">
                     <!--主選單放此-->
                     <span class="t botli">後台管理選單</span>
-                    <a class="menu-style" href="./backend.php?do=title">
-                        <div class="mainmu">網站標題管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=ad">
-                        <div class="mainmu">個人資料管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=mvim">
-                        <div class="mainmu">動畫圖片管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=image">
-                        <div class="mainmu">作品集管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=total">
-                        <div class="mainmu">進站總人數管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=bottom">
-                        <div class="mainmu">頁尾版權資料管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=news">
-                        <div class="mainmu">最新消息資料管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=admin">
-                        <div class="mainmu">管理者帳號管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=menu">
-                        <div class="mainmu">選單管理 </div>
-                    </a>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="./backend.php?do=title">網站標題管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=ad">個人資料管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=mvim">動畫圖片管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=image">作品集管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=total">進站總人數管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=bottom">頁尾版權資料管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=news">最新消息資料管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=admin">管理者帳號管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action">
+                    <a href="?do=menu">選單管理</a>
+                    </li>
+                </ul>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
 
 
                 </div>
@@ -79,8 +88,7 @@
                     <span class="t">進站總人數 :<?=$Total->find(1)['total'];?></span>
                 </div>
             </div>
-            <div class="di"
-                style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
+            <div style="  width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
                 <!--正中央-->
                 <table width="100%">
                     <tbody>
@@ -106,11 +114,7 @@
 
 							?>
             </div>
-            <div style="clear:both;"></div>
-            <div
-                style="width:1024px; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
-                <span class="t" style="line-height:123px;"><?=$Bottom->find(1)['bottom'];?></span>
-            </div>
+
         </div>
 
 </body>
