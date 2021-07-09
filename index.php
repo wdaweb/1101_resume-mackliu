@@ -48,7 +48,31 @@
 <div class="col-md-6">經歷</div>
 </div>
 <div class="row border-bottom p-5"></div>
-<div class="row border-bottom p-5"></div>
+<div class="row border-bottom p-5 flex-wrap">
+<h3 class="w-100">作品集</h3>
+<?php
+$ports=$Image->all(['sh'=>1]);
+
+foreach($ports as $port){
+?>
+<div class="col-md-4 p-3" style="height:400px;">
+    <div class="port-img border rounded-circle w-100" style="background:url('img/<?=$port['img'];?>');background-size:cover;height:300px">
+        
+    </div>
+    <div>
+        <div class="port-subject">PHP萬年曆</div>
+        <div class="port-descript">使用PHP語言製作的線上萬年曆</div>
+    </div>
+</div>
+
+
+<?php
+}
+
+?>
+
+
+</div>
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

@@ -55,7 +55,7 @@
                         <div class="mainmu">動畫圖片管理 </div>
                     </a>
                     <a class="menu-style" href="?do=image">
-                        <div class="mainmu">校園映象資料管理 </div>
+                        <div class="mainmu">作品集管理 </div>
                     </a>
                     <a class="menu-style" href="?do=total">
                         <div class="mainmu">進站總人數管理 </div>

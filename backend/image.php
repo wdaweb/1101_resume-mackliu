@@ -5,7 +5,9 @@
         <table width="100%" class="cent">
             <tbody>
                 <tr class="yel">
-                    <td width="70%">校園映像資料圖片</td>
+                    <td width="30%">作品縮圖</td>
+                    <td width="20%">作品主題</td>
+                    <td width="20%">作品描述</td>
                     <td width="10%">顯示</td>
                     <td width="10%">刪除</td>
                     <td></td>
@@ -23,6 +25,12 @@ foreach ($rows as $key => $value) {
 <tr>
     <td>
         <img src="img/<?=$value['img'];?>" style="width:100px;height:68px;">
+    </td>
+    <td>
+        <input type="text" name="subject" value="<?=$value['subject'];?>">
+    </td>
+    <td>
+        <textarea name="text"  style="width:90%;height:60px"><?=$value['text'];?></textarea>
     </td>
     <td>
         <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>
