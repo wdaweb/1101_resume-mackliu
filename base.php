@@ -7,7 +7,7 @@ date_default_timezone_set("Asia/Taipei");
 
 $ts=[
         "title"=>"網站標題管理",
-        "ad"=>"動態文字廣告管理",
+        "ad"=>"個人基本資料管理",
         'mvim'=>"動畫圖片管理",
         "image"=>"校園映像資料管理",
         "total"=>"進站總人數管理",

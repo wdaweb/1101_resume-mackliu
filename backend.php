@@ -49,7 +49,7 @@
                         <div class="mainmu">網站標題管理 </div>
                     </a>
                     <a class="menu-style" href="?do=ad">
-                        <div class="mainmu">動態文字廣告管理 </div>
+                        <div class="mainmu">個人資料管理 </div>
                     </a>
                     <a class="menu-style" href="?do=mvim">
                         <div class="mainmu">動畫圖片管理 </div>
